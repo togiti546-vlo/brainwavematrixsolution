@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Real Estate Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Add Google Maps API script -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async defer></script>
+  <script>
+    // Initialize the map
+    function initMap() {
+      var location = { lat: 37.7749, lng: -122.4194 }; // Set your map center (e.g., San Francisco)
+
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 12,
+        center: location
+      });
+
+      var marker = new google.maps.Marker({
+        position: location,
+        map: map,
+        title: 'Real Estate Office'
+      });
+    }
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">DreamHub</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#listings">Properties</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Find Your Dream Home</h2>
+      <form class="search-form">
+        <input type="text" placeholder="Search by city or ZIP" />
+        <select>
+          <option value="">Property Type</option>
+          <option value="house">House</option>
+          <option value="apartment">Apartment</option>
+        </select>
+        <input type="number" placeholder="Max Price" />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Listings Section -->
+  <section id="listings" class="listings">
+    <div class="container">
+      <h2>Featured Properties</h2>
+      <div class="property-grid">
+        <div class="property-card">
+          <img src="https://i.postimg.cc/WbSCHZdZ/Luxury-Villas.webp" alt="House 1">
+          <h3>Luxury Villa</h3>
+          <p>$3,200,000</p>
+          <p>4 Beds, 3 Baths, 3500 sqft</p>
+        </div>
+        <div class="property-card">
+          <img src="https://i.postimg.cc/mDx5HN5v/shopping.webp" alt="House 2">
+          <h3>Modern Apartment</h3>
+          <p>$850,000</p>
+          <p>2 Beds, 2 Baths, 1200 sqft</p>
+        </div>
+        <div class="property-card">
+          <img src="https://i.postimg.cc/hvcZC4gM/cozy-cottage-rangareddy-camping-grounds-8us1yatrc7.avif" alt="House 3">
+          <h3>Cozy Cottage</h3>
+          <p>$650,000</p>
+          <p>3 Beds, 2 Baths, 2000 sqft</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>RealEstatePro is a comprehensive online real estate platform connecting buyers, sellers, and agents. sinces 1999 Our mission is to simplify the home-buying process, providing unparalleled access to property listings, market insights, and expert guidance.
+</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+   
+  <!-- Map Section -->
+  <section id="map" class="map">
+    <div class="container">
+      <h2>Our Location</h2>
+      <div id="" style="height: 400px; width: 100%;"></div>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2026 TOGITI SAITEJA,9951763037,saitejatogiti@gmail.com,uppal,hydrabad,telangana</p>
+  </footer>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 1999 DreamHub. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
